@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreenivas Rizz</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .text-container {
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+            animation: colorShift 5s infinite alternate;
+        }
+
+        .text-container span {
+            display: inline-block;
+            animation: moveText 3s infinite ease-in-out;
+        }
+
+        .text-container span:nth-child(odd) {
+            animation-delay: 0.5s;
+        }
+
+        /* Color shifting animation */
+        @keyframes colorShift {
+            0% { color: #ff3366; }
+            25% { color: #33cc99; }
+            50% { color: #ffcc00; }
+            75% { color: #6600cc; }
+            100% { color: #ff66b3; }
+        }
+
+        /* Text motion animation */
+        @keyframes moveText {
+            0% { transform: translateY(-20px); opacity: 0; }
+            50% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(20px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-container">
+        <span>Sreenivas</span> has <span>too much rizz</span>, it is a confirmed fact he always gets everyone with his <span>rizz</span> he's <span>too OP</span> for <span>GPREC!!</span>
+    </div>
+
+</body>
+</html>
